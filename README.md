@@ -33,7 +33,7 @@ Listen and Send with default (local) IP and Port(8888), it works.
 input quit to exit lanchat: input>quit    
   
 # run test in default
-   lanchat.py can run with all Port and IP defaultl.  
+   lanchat.py can run with all Port and IP default.  
   in Default model. program listen local IP with port 8888 for UDP package. also send UDP message to Local IP with port 8888. 
   so this is easy way to test.  
   
