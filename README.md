@@ -19,10 +19,18 @@ sudo -H pip install -r requirements.txt
   run in sudo mode:   
   sudo python lanchat.py 
   
+  input> mode type quit will exit running.  
+  
   show help info  
   sudo python lanchat.py -h
-  
-  input> mode type quit will exit running.  
+  example: 
+sudo python lanchat.py -h 
+lanchat scans hosts of same LAN and show hosts list 
+lanchat will listen local IP and Port (which is set by user) 
+lanchat send message to host when user set remore IP and Port 
+lanchat send message begins with: input>  
+Listen and Send with default (local) IP and Port(8888), it works. 
+input quit to exit lanchat: input>quit 
   
 # run test in default
    lanchat.py can run with all Port and IP defaultl.  
