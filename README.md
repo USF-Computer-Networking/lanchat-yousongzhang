@@ -13,10 +13,14 @@ Function:
 sudo -H pip install -r requirements.txt 
 
 # How to run it
-  run in sudo mode: 
+  run in sudo mode:   
   sudo python lanchat.py 
   
   input> mode type quit will exit running.  
+  
+  tips: lanchat.py can run with default.
+  in Default model. program listen local IP with port 8888 for UDP package. also send UDP message to Local IP with port 8888.
+  so this is easy way to test.
   
   example: 
   ![example](http://www.99sns.com/lanchat.png)
