@@ -1,18 +1,24 @@
-# Working Groups
+for IETF Standards and RFCs assginment move to source: [email archives](https://github.com/USF-Computer-Networking/lanchat-yousongzhang/blob/master/README2.md)
 
-Working Groups are orgnized with topic about the specific problem or deliverables (a guideline, standards specification, etc.) it has a statable address. 
+# LanChat
 
-There are over 100 active Working Groups. Three main topic are:
+lanchat is a python tool which scans hosts of same LAN and sends text messages in UDP packets.
+Function:
+1.  show list of IP and Mac of hosts in the same LAN 
+2.  send message by UDP packet 
+3.  send message by listen UDP packet 
 
-  - Routing
-  - Transport
-  - Security
+# how to install
 
-# Working Group Email Archives
-   source: [email archives](https://datatracker.ietf.org/list/wg/)
-   
-   mail group : ipsec	IP Security Protocol
-   
-   - Split DNS which is a concept that allows a hostname to resolve to one IP address on the internal network, and another on the external network
-   - Internet Key Exchange IKE is the protocol used to set up a security association (SA) in the IPsec protocol suite. they discuss in RFC7296 that give a name of zero value as NONE. They also discussed Dynamic PMTUD on IKE2. they also concerned the risk of Quantum Computer which may decrypt VPN communications.  
+sudo -H pip install -r requirements.txt 
+
+# How to run it
+  sudo python lanchat.py 
+  
+  example: 
+  ![example](http://www.99sns.com/lanchat.png)
+  
+
+  
+ 
   
