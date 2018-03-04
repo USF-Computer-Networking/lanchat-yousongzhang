@@ -2,7 +2,7 @@ for IETF Standards and RFCs assginment move to : [readme2.md](https://github.com
 
 # LanChat
 
-lanchat is a python tool which scans hosts of same LAN and sends text messages in UDP packets.
+lanchat is a python tool which scans hosts of same LAN and sends text messages in UDP packets. 
 Function:
 1.  show list of IP and Mac of hosts in the same LAN 
 2.  send message by UDP packet 
