@@ -6,7 +6,7 @@ lanchat is a python tool which scans hosts of same LAN and sends text messages i
 Function:
 1.  show list of IP and Mac of hosts in the same LAN 
 2.  send message by UDP packet 
-3.  send message by listen UDP packet 
+3.  recieve message by listen UDP packet 
 
 # how to install
 
