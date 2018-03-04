@@ -13,7 +13,10 @@ Function:
 sudo -H pip install -r requirements.txt 
 
 # How to run it
+  run in sudo mode: 
   sudo python lanchat.py 
+  
+  input> mode type quit will exit running.  
   
   example: 
   ![example](http://www.99sns.com/lanchat.png)
