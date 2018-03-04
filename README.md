@@ -23,7 +23,7 @@ sudo -H pip install -r requirements.txt
   
   show help info  
   sudo python lanchat.py -h
-  example: 
+  example:    
 sudo python lanchat.py -h   
 lanchat scans hosts of same LAN and show hosts list   
 lanchat will listen local IP and Port (which is set by user)   
