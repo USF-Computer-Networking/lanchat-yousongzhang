@@ -1,4 +1,4 @@
-for IETF Standards and RFCs assginment move to source: [email archives](https://github.com/USF-Computer-Networking/lanchat-yousongzhang/blob/master/README2.md)
+for IETF Standards and RFCs assginment move to readme2.md: [email archives](https://github.com/USF-Computer-Networking/lanchat-yousongzhang/blob/master/README2.md)
 
 # LanChat
 
