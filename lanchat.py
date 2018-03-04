@@ -1,8 +1,18 @@
+#!/usr/bin/env python
+#title           :lanchat.py
+#description     :lanchat is a python tool which scans hosts of same LAN and sends text messages in UDP packets.
+#author          :yousong zhang
+#date            :20180225
+#version         :1.0
+#usage           :sudo python lanchat.py 
+#python_version  :2.7.12
+#==============================================================================
+
+
 from pprint import pprint
 
 import time, os, sys, logging, math
 from time import sleep
-import urllib2 as urllib
 import traceback
 from scapy.all import *
 import scan
@@ -149,7 +159,7 @@ def startListenServer():
 def startSend(hosts):
     sleep(1)  # for listen finished
     local_index = len(hosts) - 1
-    print "send message to host:"
+    print("send message to host:")
     try:
         host = input("Enter the ID of Host(default: local "+ str(local_index) +"): ")
     except:
@@ -166,8 +176,7 @@ def startSend(hosts):
     UDP_IP = hosts[host][0]
     UDP_PORT = port
 
-    print
-    "Ready to send message to Port : " + str(UDP_PORT) + "  @ " + UDP_IP
+    print("Ready to send message to Port : " + str(UDP_PORT) + "  @ " + UDP_IP)
 
     while True:
         sleep(1)
@@ -175,13 +184,13 @@ def startSend(hosts):
         if msg == "quit" :
             raise SystemExit
         sock.sendto(msg, (UDP_IP, UDP_PORT))
-        print "sent message to [", UDP_IP, ']:', msg
+        print("sent message to [", UDP_IP, ']:', msg)
 
 
 # startListen
 def startListen(port):
     host = getLocalIP()
-    print "Listen Port : " + str(port)+ "  @ " + host
+    print("Listen Port : " + str(port)+ "  @ " + host)
 
     try:
         sock = socket.socket(socket.AF_INET,  # Internet
@@ -190,7 +199,7 @@ def startListen(port):
 
         while True:
             data, addr = sock.recvfrom(1024)  # buffer size is 1024 bytes
-            print "received message from [", addr[0], ']:', data
+            print("received message from [", addr[0], ']:', data)
     except:
         # request gateway IP address (after failed detection by scapy)
         print("\n{0}ERROR: startListen failed host : "+ host +" port:" +str(port)+ ".{1}\n").format(RED, END)
@@ -245,10 +254,10 @@ if __name__ == '__main__':
 
     hostsList.append((localIP, "local IP test"))
 
-    print " ID", "    IP", "       MAC"
+    print(" ID", "    IP", "       MAC")
     for index in range(len(hostsList)):
 
-        print '[',index,']',  hostsList[index][0], hostsList[index][1]
+        print('[',index,']',  hostsList[index][0], hostsList[index][1])
     #pprint(hostsList);
 
 
