@@ -7,6 +7,7 @@ Function:
 1.  show list of IP and Mac of hosts in the same LAN 
 2.  send message by UDP packet 
 3.  recieve message by listen UDP packet 
+4.  show help info 
 
 # how to install
 
@@ -17,6 +18,9 @@ sudo -H pip install -r requirements.txt
 # How to run it
   run in sudo mode:   
   sudo python lanchat.py 
+  
+  show help info  
+  sudo python lanchat.py -h
   
   input> mode type quit will exit running.  
   
